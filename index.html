@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Shuhaib.K — AI Content Creator &amp; Prompt Engineer</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Italiana&family=Playfair+Display:ital,wght@0,600;1,500;1,600&family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Cinematic Canvas (Subtle Floating Mist & Light Trails) -->
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+
+  <!-- Sticky Global Navigation Bar -->
+  <header class="global-navbar" id="globalNav">
+    <div class="nav-inner-container">
+      
+      <!-- Left Logo & Monogram -->
+      <a href="#home" class="nav-brand-group" aria-label="Mohammed Shuhaib.K Home">
+        <svg class="ms-brand-svg" viewBox="0 0 44 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 24V2L10 16L18 2V24" stroke="#F8F5EE" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 19.5C24.5 22.2 27 24 30.5 24C34.5 24 37 21.5 37 18.2C37 12.8 24.5 13.5 24.5 6.8C24.5 3.8 27.2 2 30.5 2C33.8 2 36.2 3.6 36.8 6.5" stroke="#C7B28A" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-brand-sep">|</span>
+        <span class="nav-brand-text">MOHAMMED SHUHAIB.K</span>
+      </a>
+
+      <!-- Center Nav Links -->
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-section="home"><span class="nav-link-text">HOME</span><span class="nav-active-pill"></span></a></li>
+          <li><a href="#about" class="nav-link" data-section="about"><span class="nav-link-text">ABOUT</span><span class="nav-active-pill"></span></a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-link-text">SKILLS</span><span class="nav-active-pill"></span></a></li>
+          <li><a href="#services" class="nav-link" data-section="services"><span class="nav-link-text">SERVICES</span><span class="nav-active-pill"></span></a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-link-text">PROJECTS</span><span class="nav-active-pill"></span></a></li>
+          <li><a href="#results" class="nav-link" data-section="results"><span class="nav-link-text">RESULTS</span><span class="nav-active-pill"></span></a></li>
+          <li><a href="#testimonials" class="nav-link" data-section="testimonials"><span class="nav-link-text">TESTIMONIALS</span><span class="nav-active-pill"></span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action / Resume Button -->
+      <div class="nav-action-wrapper">
+        <a href="assets/Mohammed_Shuhaib_CV.pdf" download="Mohammed_Shuhaib_CV.pdf" target="_blank" rel="noopener" class="btn-nav-resume" aria-label="Download Resume">
+          <svg class="icon-download-arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 2V10.5M8 10.5L4.5 7M8 10.5L11.5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.5 13.5H13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>RESUME</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawer">
+    <ul class="mobile-drawer-list">
+      <li><a href="#home" class="mobile-drawer-link active">HOME</a></li>
+      <li><a href="#about" class="mobile-drawer-link">ABOUT</a></li>
+      <li><a href="#skills" class="mobile-drawer-link">SKILLS</a></li>
+      <li><a href="#services" class="mobile-drawer-link">SERVICES</a></li>
+      <li><a href="#projects" class="mobile-drawer-link">PROJECTS</a></li>
+      <li><a href="#results" class="mobile-drawer-link">RESULTS</a></li>
+      <li><a href="#testimonials" class="mobile-drawer-link">TESTIMONIALS</a></li>
+      <li><a href="assets/Mohammed_Shuhaib_CV.pdf" download="Mohammed_Shuhaib_CV.pdf" class="mobile-drawer-link resume-gold">↓ RESUME</a></li>
+    </ul>
+  </div>
+
+  <!-- ======================================================================
+       1. HERO SECTION (Dynamic Luxury Editorial Typography)
+       ====================================================================== -->
+  <section class="viewport-frame hero-frame" id="home">
+    
+    <!-- DESKTOP HERO SHOWCASE -->
+    <div class="desktop-hero-showcase">
+      <img 
+        src="assets/hero-cinematic-master.png" 
+        alt="Mohammed Shuhaib.K — AI Content Creator &amp; Prompt Engineer" 
+        class="master-hero-art"
+        loading="eager"
+      />
+
+      <!-- Desktop Hero Content & Typography Overlay -->
+      <div class="desktop-hero-overlay">
+        <div class="desktop-hero-content">
+          <!-- Eyebrow Brand Identity -->
+          <div class="hero-brand-eyebrow">
+            <span class="hero-eyebrow-accent"></span>
+            <span class="hero-eyebrow-name">MOHAMMED SHUHAIB.K</span>
+          </div>
+
+          <!-- Hero Typographic Title -->
+          <div class="hero-typography-block">
+            <div class="hero-title-top">AI CONTENT</div>
+            <h1 class="hero-condensed-title">CREATOR</h1>
+          </div>
+
+          <!-- Editorial Subtitle -->
+          <p class="hero-narrative-lead">
+            Turning Ideas Into Engaging Visual Stories.
+          </p>
+
+          <!-- Interactive Action CTAs -->
+          <div class="hero-action-buttons">
+            <a href="https://drive.google.com/drive/folders/1JAyvymUaU0AaZIwj5x4__J-NJdLIRuDV?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-hero-primary" aria-label="View Work in Google Drive">
+              <svg class="hero-btn-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M4 3.2v9.6l8.8-4.8L4 3.2z"/>
+              </svg>
+              <span>VIEW WORK</span>
+            </a>
+
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="btn-hero-secondary" aria-label="Contact Me on WhatsApp">
+              <svg class="hero-btn-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M13.6 2.4A7.9 7.9 0 0 0 8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1.1 4L0 16l4.1-1.1c1.2.7 2.5 1.1 3.9 1.1h0c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.5.7.7-2.5-.2-.3c-.7-1-1-2.3-1-3.6 0-3.7 3-6.7 6.7-6.7 1.8 0 3.5.7 4.7 2 1.3 1.3 2 2.9 2 4.7 0 3.7-3 6.7-6.8 6.7zm3.7-5c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1-.1.2-.6.7-.7.9-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.7-1-.6-.6-1.1-1.3-1.2-1.5-.1-.2 0-.4.1-.5l.3-.4c.1-.1.2-.3.3-.4.1-.1.1-.3 0-.4s-.5-1.2-.7-1.6c-.2-.4-.4-.3-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.1 1.6 2.5 3.9 3.5.5.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1z"/>
+              </svg>
+              <span>CONTACT ME</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Desktop Socials Dock (Bottom Left) -->
+        <div class="hero-socials-dock">
+          <a href="https://wa.me/918086648642" target="_blank" rel="noopener noreferrer" class="hero-dock-item" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.301-.15-1.782-.88-2.058-.98-.276-.101-.476-.15-.676.15-.2.301-.776.98-.952 1.18-.175.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.8-1.501-1.789-1.677-2.09-.175-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.15-.176.2-.301.301-.502.101-.2.05-.376-.025-.527-.075-.15-.677-1.632-.928-2.234-.244-.587-.493-.507-.677-.517-.175-.01-.376-.01-.577-.01s-.527.075-.802.376c-.276.301-1.053 1.029-1.053 2.508 0 1.48 1.078 2.909 1.229 3.11.15.201 2.122 3.24 5.141 4.544.718.31 1.278.496 1.716.635.722.23 1.379.197 1.898.12.578-.087 1.782-.728 2.032-1.431.251-.703.251-1.306.176-1.431-.076-.126-.276-.201-.577-.352z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/shu._.haib_?stkn=ZW03ZHFrZW16eDc3&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hero-dock-item" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="tel:+918086648642" class="hero-dock-item" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </a>
+          <span class="hero-dock-sep"></span>
+          <span class="hero-dock-label">DIRECT CONNECT</span>
+        </div>
+
+        <!-- Desktop Scroll Indicator (Bottom Right) -->
+        <a href="#about" class="hero-desktop-scroll-link" aria-label="Scroll to About Section">
+          <span class="scroll-link-text">SCROLL DOWN</span>
+          <svg class="scroll-link-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3v10M4 9l4 4 4-4"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- MOBILE / TABLET ADAPTIVE HERO -->
+    <div class="mobile-hero-container">
+      <div class="mobile-hero-body">
+        <div class="mobile-eyebrow">MOHAMMED SHUHAIB.K</div>
+        
+        <div class="mobile-headline-block">
+          <div class="mobile-title-top">AI CONTENT</div>
+          <h1 class="mobile-condensed-title">CREATOR</h1>
+        </div>
+
+        <p class="mobile-subtitle">
+          Turning Ideas Into Engaging Visual Stories.
+        </p>
+
+        <div class="mobile-cta-group">
+          <a href="https://drive.google.com/drive/folders/1JAyvymUaU0AaZIwj5x4__J-NJdLIRuDV?usp=sharing" target="_blank" rel="noopener noreferrer" class="mobile-btn-work" aria-label="View Work in Google Drive">
+            <span>▶ VIEW WORK</span>
+          </a>
+          <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="mobile-btn-contact">
+            <span>💬 CONTACT ME</span>
+          </a>
+        </div>
+
+        <!-- Mobile Portrait Image -->
+        <div class="mobile-portrait-wrapper">
+          <img 
+            src="assets/portrait-mobile.png" 
+            alt="Mohammed Shuhaib.K — AI Content Creator" 
+            class="mobile-portrait-img"
+          />
+        </div>
+
+        <!-- Mobile Socials Row -->
+        <div class="mobile-socials-row">
+          <a href="https://wa.me/918086648642" target="_blank" rel="noopener noreferrer" class="m-social">WhatsApp</a>
+          <span class="m-dot">•</span>
+          <a href="https://www.instagram.com/shu._.haib_?stkn=ZW03ZHFrZW16eDc3&utm_source=qr" target="_blank" rel="noopener noreferrer" class="m-social">Instagram</a>
+          <span class="m-dot">•</span>
+          <a href="tel:+918086648642" class="m-social">Call</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ======================================================================
+       2. ABOUT ME SECTION (Expanded Grand Luxury Edition)
+       ====================================================================== -->
+  <section class="viewport-frame about-section-frame" id="about">
+    <div class="about-container">
+      
+      <!-- Left Column: Editorial Narrative & Expertise -->
+      <div class="about-text-column">
+        
+        <!-- Section Tag -->
+        <div class="about-tag-row">
+          <span class="about-tag-line"></span>
+          <span class="about-tag-text">ABOUT MOHAMMED SHUHAIB.K</span>
+        </div>
+
+        <!-- Grand Main Heading -->
+        <h2 class="about-main-heading">
+          Transforming Creative Ideas Into<br>
+          <span class="heading-serif-italic">Cinematic Visual Reality.</span>
+        </h2>
+
+        <!-- Vision Manifesto Quote Box -->
+        <div class="about-quote-box">
+          <div class="quote-border-line"></div>
+          <p class="about-quote-text">
+            "By fusing visionary creative direction with the power of generative AI, I architect visual stories that captivate, convert, and leave an indelible impression."
+          </p>
+        </div>
+
+        <!-- Paragraphs with Clean Editorial Typography -->
+        <div class="about-paragraphs">
+          <p class="about-p about-p-lead">
+            Hi, I'm <span class="highlight-lead">Mohammed Shuhaib.K</span> — an <span class="highlight-cyan">AI Content Creator</span>, <span class="highlight-cyan">Prompt Engineer</span>, and Visual Storyteller driven by a relentless pursuit of cinematic quality and digital impact.
+          </p>
+
+          <p class="about-p">
+            I specialize in end-to-end AI-powered creative production — from <span class="highlight-cyan">prompt engineering</span> and <span class="highlight-cyan">photorealistic image generation</span> to <span class="highlight-cyan">cinematic video creation</span>, dynamic <span class="highlight-cyan">video production</span>, and high-performance <span class="highlight-cyan">digital marketing</span>. I bridge creative imagination with advanced generative models to craft high-value digital experiences.
+          </p>
+
+          <p class="about-p">
+            With hands-on mastery across next-generation AI platforms including <span class="highlight-cyan">ChatGPT</span>, <span class="highlight-cyan">Claude</span>, <span class="highlight-cyan">Nano Banana</span>, <span class="highlight-cyan">Omni Flash</span>, <span class="highlight-cyan">Kling AI</span>, and <span class="highlight-cyan">Seedance</span>, I develop systematic, repeatable workflows that achieve character consistency, scene continuity, and Hollywood-grade lighting fidelity.
+          </p>
+
+          <p class="about-p">
+            As a <span class="highlight-cyan">BBA Graduate</span> expanding into advanced AI Content Creation and Marketing, I unite commercial strategic thinking with modern AI craftsmanship — enabling brands, businesses, and agency partners to turn visionary concepts into high-converting campaigns with extraordinary speed.
+          </p>
+        </div>
+
+        <!-- 4-Pillar Specialization Grid (Grand Bento Cards) -->
+        <div class="about-pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-num">01</span>
+              <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+            <h4 class="pillar-title">Prompt Engineering</h4>
+            <p class="pillar-desc">Semantic steering, aesthetic conditioning, camera control &amp; prompt design.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-num">02</span>
+              <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h4 class="pillar-title">AI Image &amp; Video</h4>
+            <p class="pillar-desc">Photorealistic character design, product visualization &amp; cinema-grade video.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-num">03</span>
+              <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="7" y1="2" x2="7" y2="22"></line>
+                <line x1="17" y1="2" x2="17" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+              </svg>
+            </div>
+            <h4 class="pillar-title">Video Production</h4>
+            <p class="pillar-desc">Commercial direction, visual pacing, storyboard creation &amp; sound sync.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-top">
+              <span class="pillar-num">04</span>
+              <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h4 class="pillar-title">Digital Marketing</h4>
+            <p class="pillar-desc">Meta Ads creative, social media virality &amp; conversion-focused campaigns.</p>
+          </div>
+
+        </div>
+
+        <!-- Interactive AI Tools Showcase (Luxury Badges) -->
+        <div class="about-tools-block">
+          <div class="tools-tag-row">
+            <span class="tools-tag-line"></span>
+            <span class="tools-tag-text">CORE AI WORKFLOW ECOSYSTEM</span>
+          </div>
+          
+          <div class="tools-bento-row">
+            <div class="tool-bento-chip">
+              <span class="tool-dot-pulse"></span>
+              <div class="tool-chip-info">
+                <span class="tool-chip-name">ChatGPT</span>
+                <span class="tool-chip-role">Logic &amp; Scripts</span>
+              </div>
+            </div>
+
+            <div class="tool-bento-chip">
+              <span class="tool-dot-pulse"></span>
+              <div class="tool-chip-info">
+                <span class="tool-chip-name">Claude</span>
+                <span class="tool-chip-role">Prompt Architecture</span>
+              </div>
+            </div>
+
+            <div class="tool-bento-chip">
+              <span class="tool-dot-pulse"></span>
+              <div class="tool-chip-info">
+                <span class="tool-chip-name">Nano Banana</span>
+                <span class="tool-chip-role">Visual Ideation</span>
+              </div>
+            </div>
+
+            <div class="tool-bento-chip">
+              <span class="tool-dot-pulse"></span>
+              <div class="tool-chip-info">
+                <span class="tool-chip-name">Omni Flash</span>
+                <span class="tool-chip-role">High-Velocity Engine</span>
+              </div>
+            </div>
+
+            <div class="tool-bento-chip">
+              <span class="tool-dot-pulse"></span>
+              <div class="tool-chip-info">
+                <span class="tool-chip-name">Kling AI</span>
+                <span class="tool-chip-role">Cinematic Video Synthesis</span>
+              </div>
+            </div>
+
+            <div class="tool-bento-chip">
+              <span class="tool-dot-pulse"></span>
+              <div class="tool-chip-info">
+                <span class="tool-chip-name">Seedance</span>
+                <span class="tool-chip-role">Motion &amp; Keyframing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Quick Action Row -->
+        <div class="about-action-row">
+          <a href="#projects" class="btn-about-primary">
+            <span>EXPLORE COMMERCIAL WORKS</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20reviewed%20your%20About%20profile%20and%20would%20love%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn-about-secondary">
+            <span>💬 CONNECT ON WHATSAPP</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Grand Visual Composition with Mohammed Shuhaib.K in Black Suit -->
+      <div class="about-visual-column">
+        <div class="about-visual-stage">
+          
+          <!-- Ambient Radial Halo -->
+          <div class="about-halo-glow"></div>
+
+          <!-- Futuristic Frame with Corner Brackets -->
+          <div class="about-visual-frame">
+            <span class="hud-corner hud-corner-tl"></span>
+            <span class="hud-corner hud-corner-tr"></span>
+            <span class="hud-corner hud-corner-bl"></span>
+            <span class="hud-corner hud-corner-br"></span>
+
+            <img 
+              src="assets/about-visual-final.png" 
+              alt="Mohammed Shuhaib.K in tailored black suit with glowing MS monogram and HUD telemetry indicators" 
+              class="about-visual-img"
+              loading="lazy"
+            />
+
+            <!-- Floating High-Tech Telemetry HUD Overlays -->
+            <div class="hud-float-pill hud-pill-top">
+              <span class="hud-indicator-dot"></span>
+              <span class="hud-pill-text">AI CREATIVE DIRECTOR // 2026</span>
+            </div>
+
+            <div class="hud-float-pill hud-pill-bottom-left">
+              <svg class="hud-pill-icon" viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="hud-pill-text">BBA GRADUATE • STRATEGIC GROWTH</span>
+            </div>
+
+            <div class="hud-float-pill hud-pill-bottom-right">
+              <span class="hud-pill-num">100+</span>
+              <span class="hud-pill-sub">AI DELIVERABLES</span>
+            </div>
+
+          </div>
+
+          <!-- Bottom Micro-Badge -->
+          <div class="about-stage-badge">
+            <span class="badge-dot"></span>
+            <span>AVAILABLE FOR COMMERCIAL CAMPAIGNS &amp; CREATIVE DIRECTION</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       3. SKILLS SECTION (Technical Mastery & Creative Direction)
+       ====================================================================== -->
+  <section class="viewport-frame skills-section-frame" id="skills">
+    <div class="skills-container">
+      
+      <!-- Section Header -->
+      <div class="skills-header">
+        <div class="skills-tag-row">
+          <span class="skills-tag-line"></span>
+          <span class="skills-tag-text">MY SKILLS</span>
+        </div>
+
+        <h2 class="skills-main-heading">
+          Technical Mastery &amp;<br>
+          <span class="heading-serif-italic">Creative Direction.</span>
+        </h2>
+
+        <p class="skills-subheading">
+          A specialized ecosystem of advanced prompt engineering, generative AI cinematography, digital marketing strategies, and cutting-edge neural workflows.
+        </p>
+      </div>
+
+      <!-- Skills Bento Grid -->
+      <div class="skills-grid">
+        
+        <!-- Category 01: AI & Prompt Engineering (Flagship / Full Width) -->
+        <div class="skills-category-card card-featured">
+          <div class="category-card-header">
+            <div class="cat-badge-wrap">
+              <span class="cat-number">01</span>
+              <span class="cat-indicator"></span>
+            </div>
+            <div class="cat-title-wrap">
+              <h3 class="cat-title">AI &amp; Prompt Engineering</h3>
+              <p class="cat-desc">Architecting multi-model generative pipelines, cinematic narrative prompts, and character consistency frameworks.</p>
+            </div>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-pill"><span class="pill-dot"></span>Prompt Engineering</span>
+            <span class="skill-pill"><span class="pill-dot"></span>AI Content Creation</span>
+            <span class="skill-pill"><span class="pill-dot"></span>AI Image Generation</span>
+            <span class="skill-pill"><span class="pill-dot"></span>AI Video Generation</span>
+            <span class="skill-pill"><span class="pill-dot"></span>AI Workflow Development</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Creative Prompt Writing</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Cinematic Prompt Design</span>
+            <span class="skill-pill"><span class="pill-dot"></span>AI Storytelling</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Character Consistency</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Scene &amp; Storyboard Creation</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Video Production</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Creative Direction</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Script Writing</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Visual Storytelling</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- Category 02: AI Image & Creative Design -->
+        <div class="skills-category-card">
+          <div class="category-card-header">
+            <div class="cat-badge-wrap">
+              <span class="cat-number">02</span>
+              <span class="cat-indicator"></span>
+            </div>
+            <div class="cat-title-wrap">
+              <h3 class="cat-title">AI Image &amp; Creative Design</h3>
+              <p class="cat-desc">High-fidelity visual production, character modeling, and commercial asset crafting.</p>
+            </div>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-pill"><span class="pill-dot"></span>AI Image Generation</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Character Design</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Product Visualization</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Advertising Creatives</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Social Media Creatives</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Brand Visual Content</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Image Prompt Engineering</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- Category 03: Content & Digital Marketing -->
+        <div class="skills-category-card">
+          <div class="category-card-header">
+            <div class="cat-badge-wrap">
+              <span class="cat-number">03</span>
+              <span class="cat-indicator"></span>
+            </div>
+            <div class="cat-title-wrap">
+              <h3 class="cat-title">Content &amp; Digital Marketing</h3>
+              <p class="cat-desc">Data-driven content distribution, Meta Ads optimization, and viral storytelling.</p>
+            </div>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-pill"><span class="pill-dot"></span>Content Creation</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Social Media Content</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Digital Marketing</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Meta Ads</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Ad Creative Development</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Brand Promotion</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Marketing Content Creation</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- Category 04: AI Tools & Technologies -->
+        <div class="skills-category-card card-tools-showcase">
+          <div class="category-card-header">
+            <div class="cat-badge-wrap">
+              <span class="cat-number">04</span>
+              <span class="cat-indicator"></span>
+            </div>
+            <div class="cat-title-wrap">
+              <h3 class="cat-title">AI Tools &amp; Technologies</h3>
+              <p class="cat-desc">State-of-the-art multimodal engines and specialized generative platforms.</p>
+            </div>
+          </div>
+          <div class="skills-tools-grid">
+            <div class="tool-card-micro">
+              <div class="tool-micro-top">
+                <span class="tool-micro-icon">⚡</span>
+                <span class="tool-status-dot"></span>
+              </div>
+              <span class="tool-micro-name">ChatGPT</span>
+              <span class="tool-micro-tag">LLM &amp; Prompt Engineering</span>
+            </div>
+            <div class="tool-card-micro">
+              <div class="tool-micro-top">
+                <span class="tool-micro-icon">🧠</span>
+                <span class="tool-status-dot"></span>
+              </div>
+              <span class="tool-micro-name">Claude</span>
+              <span class="tool-micro-tag">Reasoning &amp; Narrative</span>
+            </div>
+            <div class="tool-card-micro">
+              <div class="tool-micro-top">
+                <span class="tool-micro-icon">🍌</span>
+                <span class="tool-status-dot"></span>
+              </div>
+              <span class="tool-micro-name">Nano Banana</span>
+              <span class="tool-micro-tag">Visual Synthesis Engine</span>
+            </div>
+            <div class="tool-card-micro">
+              <div class="tool-micro-top">
+                <span class="tool-micro-icon">✨</span>
+                <span class="tool-status-dot"></span>
+              </div>
+              <span class="tool-micro-name">Omni Flash</span>
+              <span class="tool-micro-tag">Rapid Neural Rendering</span>
+            </div>
+            <div class="tool-card-micro">
+              <div class="tool-micro-top">
+                <span class="tool-micro-icon">🎬</span>
+                <span class="tool-status-dot"></span>
+              </div>
+              <span class="tool-micro-name">Kling</span>
+              <span class="tool-micro-tag">Cinematic AI Video</span>
+            </div>
+            <div class="tool-card-micro">
+              <div class="tool-micro-top">
+                <span class="tool-micro-icon">🌊</span>
+                <span class="tool-status-dot"></span>
+              </div>
+              <span class="tool-micro-name">Seedance</span>
+              <span class="tool-micro-tag">Dynamic Video Synthesis</span>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- Category 05: Additional Skills -->
+        <div class="skills-category-card">
+          <div class="category-card-header">
+            <div class="cat-badge-wrap">
+              <span class="cat-number">05</span>
+              <span class="cat-indicator"></span>
+            </div>
+            <div class="cat-title-wrap">
+              <h3 class="cat-title">Additional Skills</h3>
+              <p class="cat-desc">Complementary strategic disciplines across production, code, and brand identity.</p>
+            </div>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-pill"><span class="pill-dot"></span>Video Production</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Web Development</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Creative Problem Solving</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Creative Concept Development</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Branding</span>
+            <span class="skill-pill"><span class="pill-dot"></span>Personal Branding</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       3. SERVICES SECTION (Comprehensive AI & Creative Production)
+       ====================================================================== -->
+  <section class="viewport-frame services-section-frame" id="services">
+    <div class="services-container">
+      
+      <!-- Section Header -->
+      <div class="services-header">
+        <div class="services-tag-row">
+          <span class="services-tag-line"></span>
+          <span class="services-tag-text">SERVICES</span>
+        </div>
+
+        <h2 class="services-main-heading">
+          AI-Powered Solutions &amp;<br>
+          <span class="heading-serif-italic">Creative Production.</span>
+        </h2>
+
+        <p class="services-subheading">
+          Bridging advanced artificial intelligence with cinematic visual storytelling to elevate forward-thinking brands, businesses, and digital creators.
+        </p>
+      </div>
+
+      <!-- Services Editorial Roster Directory (Replaces the box grid) -->
+      <div class="services-roster-container">
+        
+        <!-- 01: AI Content Creation -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">01</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">MULTIMODAL SYNTHESIS</span>
+              <h3 class="service-row-title">AI Content Creation</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Crafting bespoke AI-powered visual narratives, viral social content, and multi-platform media tailored for brands, businesses, and digital creators.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Generative Art</span>
+              <span class="s-tag">Brand Narratives</span>
+              <span class="s-tag">Creative Assets</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20AI%20Content%20Creation." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about AI Content Creation">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02: AI Video Production -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">02</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">CINEMATIC MOTION</span>
+              <h3 class="service-row-title">AI Video Production</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Creating high-end cinematic AI videos, broadcast advertisements, product commercials, luxury teasers, and high-framerate dynamic motion content.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Cinematic Commercials</span>
+              <span class="s-tag">Kling AI</span>
+              <span class="s-tag">Product Motion</span>
+              <span class="s-tag">Viral Reels</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20AI%20Video%20Production." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about AI Video Production">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 03: AI Image Generation -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">03</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">STUDIO VISUALIZATION</span>
+              <h3 class="service-row-title">AI Image Generation</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Studio-grade AI-generated imagery for premium product lines, fashion campaigns, advertising visuals, and creative concept design.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Photorealism</span>
+              <span class="s-tag">Macro Lighting</span>
+              <span class="s-tag">Character Consistency</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20AI%20Image%20Generation." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about AI Image Generation">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 04: Prompt Engineering -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">04</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">SEMANTIC ARCHITECTURE</span>
+              <h3 class="service-row-title">Prompt Engineering</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Engineering complex algorithmic prompts for advanced LLMs and diffusion models to achieve exacting artistic control and repeatable output pipelines.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Model Steering</span>
+              <span class="s-tag">Style Conditioning</span>
+              <span class="s-tag">Workflow Automation</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20Prompt%20Engineering." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about Prompt Engineering">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 05: AI Storytelling & Script Writing -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">05</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">NARRATIVE DIRECTION</span>
+              <h3 class="service-row-title">AI Storytelling &amp; Script Writing</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Conceptualizing captivating scripts, sequential storyboards, and emotional visual arcs crafted specifically for generative video productions.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Visual Screenplays</span>
+              <span class="s-tag">Storyboard Sequencing</span>
+              <span class="s-tag">Scene Direction</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20AI%20Storytelling." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about AI Storytelling">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 06: Advertising Creatives -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">06</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">COMMERCIAL IMPACT</span>
+              <h3 class="service-row-title">Advertising Creatives</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              High-conversion advertising visual sets and dynamic commercial video cuts optimized for digital ads, Meta marketing, and product launches.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Commercial Video Ads</span>
+              <span class="s-tag">Hook Variations</span>
+              <span class="s-tag">Campaign Assets</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20Advertising%20Creatives." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about Advertising Creatives">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 07: Social Media Content -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">07</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">AUDIENCE ENGAGEMENT</span>
+              <h3 class="service-row-title">Social Media Content</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Engaging short-form reels, promotional carousels, and creative visual content engineered for high organic reach across social media channels.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Short-form Reels</span>
+              <span class="s-tag">Promotional Teasers</span>
+              <span class="s-tag">Visual Content Strategy</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20Social%20Media%20Content." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about Social Media Content">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 08: Brand & Product Visualization -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">08</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">DIGITAL TWIN / 3D</span>
+              <h3 class="service-row-title">Brand &amp; Product Visualization</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Premium 3D-style product visualization, photorealistic packaging renders, and luxury brand lookbooks that command market presence.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Product Stills</span>
+              <span class="s-tag">Packaging Cinema</span>
+              <span class="s-tag">Brand Aesthetics</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20Brand%20Visualization." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about Brand & Product Visualization">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 09: Web Development -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">09</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">INTERACTIVE EXPERIENCES</span>
+              <h3 class="service-row-title">Web Development</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Designing and developing modern, responsive, and visually engaging web experiences, luxury creative portfolios, and brand landing pages.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Responsive Portfolios</span>
+              <span class="s-tag">High-Performance UI</span>
+              <span class="s-tag">Modern Web Code</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20Web%20Development." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about Web Development">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 10: Digital Marketing Support -->
+        <article class="service-roster-row">
+          <div class="service-row-left">
+            <span class="service-row-num">10</span>
+            <div class="service-row-title-block">
+              <span class="service-row-badge">GROWTH &amp; PERFORMANCE</span>
+              <h3 class="service-row-title">Digital Marketing Support</h3>
+            </div>
+          </div>
+          <div class="service-row-mid">
+            <p class="service-row-desc">
+              Supporting businesses with creative marketing content, high-ROI Meta Ads creatives, audience testing, and AI-powered performance solutions.
+            </p>
+            <div class="service-row-tags">
+              <span class="s-tag">Meta Ads Creative</span>
+              <span class="s-tag">Audience Targeting</span>
+              <span class="s-tag">Growth Direction</span>
+            </div>
+          </div>
+          <div class="service-row-right">
+            <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20am%20interested%20in%20your%20service%3A%20Digital%20Marketing." target="_blank" rel="noopener noreferrer" class="service-inquire-btn" aria-label="Inquire about Digital Marketing Support">
+              <span>INQUIRE</span>
+              <span class="s-arrow">↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Services Bottom Action Row -->
+      <div class="services-footer-cta">
+        <div class="cta-inner-card">
+          <div class="cta-text-side">
+            <span class="cta-lead-label">READY TO COLLABORATE?</span>
+            <h3 class="cta-lead-title">Let's Bring Your Next Idea to Life</h3>
+            <p class="cta-lead-desc">Whether you need cinematic AI visuals, high-converting video campaigns, or creative direction, let's create something extraordinary.</p>
+          </div>
+          <div class="cta-btn-side">
+            <a href="#contact" class="btn-services-contact">
+              <span>GET IN TOUCH</span>
+              <span class="cta-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       4. PROJECTS SECTION (Curated Commercial AI Video Showcase)
+       ====================================================================== -->
+  <section class="viewport-frame projects-section-frame" id="projects">
+    <div class="projects-container">
+      
+      <!-- Section Header -->
+      <div class="projects-header">
+        <div class="projects-tag-row">
+          <span class="projects-tag-line"></span>
+          <span class="projects-tag-text">FEATURED PROJECTS</span>
+        </div>
+
+        <div class="projects-header-flex">
+          <div class="projects-header-text">
+            <h2 class="projects-main-heading">
+              Commercial Productions &amp;<br>
+              <span class="heading-serif-italic">AI Video Showcase.</span>
+            </h2>
+            <p class="projects-subheading">
+              A curated selection of high-impact AI commercial advertisements, luxury product visualizations, and animated storytelling produced with modern generative video workflows.
+            </p>
+          </div>
+
+          <div class="projects-header-action">
+            <a href="https://drive.google.com/drive/folders/1JAyvymUaU0AaZIwj5x4__J-NJdLIRuDV?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-drive-vault">
+              <svg class="icon-drive-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.27 3L2 14L5.13 19.5L11.4 8.5L8.27 3Z" fill="#34D399"/>
+                <path d="M22 14L15.73 3H9.46L15.73 14H22Z" fill="#10B981"/>
+                <path d="M14.54 15.5L11.41 21H23.95L27.08 15.5H14.54Z" fill="#059669"/>
+              </svg>
+              <span>OPEN GOOGLE DRIVE ARCHIVE</span>
+              <span class="btn-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid (6 Main Commercial AI Videos) -->
+      <div class="projects-grid">
+        
+        <!-- Project 01: Luxury Timepiece Commercial -->
+        <article class="project-card">
+          <div class="project-video-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1KShbEX3KdRc8fWslp1FrkYlx-mpmR8po/preview" 
+              class="project-video-iframe" 
+              title="Chrono Noir — Luxury Timepiece Commercial"
+              allow="autoplay; fullscreen" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-category-row">
+              <span class="project-badge">COMMERCIAL AD / 3D VISUALIZATION</span>
+              <span class="project-num">01</span>
+            </div>
+            <h3 class="project-title">Chrono Noir — Luxury Timepiece Commercial</h3>
+            <p class="project-desc">
+              Cinematic macro cinematography, light refractions, and precision mechanical detailing engineered for a luxury timepiece commercial.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Prompt Engineering</span>
+              <span class="project-tag">Kling AI</span>
+              <span class="project-tag">Cinematic Lighting</span>
+              <span class="project-tag">Product Cinema</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://drive.google.com/file/d/1KShbEX3KdRc8fWslp1FrkYlx-mpmR8po/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Watch in Drive</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </article>
+
+        <!-- Project 02: Haute Parfumerie Campaign -->
+        <article class="project-card">
+          <div class="project-video-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1g4OF5W2YRYuZsGdqDmjM0S3cd9izZgSy/preview" 
+              class="project-video-iframe" 
+              title="Velvet & Gold — Haute Parfumerie Campaign"
+              allow="autoplay; fullscreen" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-category-row">
+              <span class="project-badge">LUXURY BRANDING / PRODUCT CINEMA</span>
+              <span class="project-num">02</span>
+            </div>
+            <h3 class="project-title">Velvet &amp; Gold — Haute Parfumerie Campaign</h3>
+            <p class="project-desc">
+              High-fashion fragrance campaign featuring volumetric mist, gold dust particles, and luxury editorial aesthetics.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">AI Video Generation</span>
+              <span class="project-tag">Visual Storytelling</span>
+              <span class="project-tag">Creative Direction</span>
+              <span class="project-tag">Brand Promotion</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://drive.google.com/file/d/1g4OF5W2YRYuZsGdqDmjM0S3cd9izZgSy/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Watch in Drive</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </article>
+
+        <!-- Project 03: Cosmetics & Skincare Ad -->
+        <article class="project-card">
+          <div class="project-video-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1uTD_oTP-AwIM5Vr7zJDJtaTf43uo1laG/preview" 
+              class="project-video-iframe" 
+              title="Lumina Glow — Cosmetics & Skincare Ad"
+              allow="autoplay; fullscreen" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-category-row">
+              <span class="project-badge">BEAUTY &amp; WELLNESS / REEL CAMPAIGN</span>
+              <span class="project-num">03</span>
+            </div>
+            <h3 class="project-title">Lumina Glow — Cosmetics &amp; Skincare Ad</h3>
+            <p class="project-desc">
+              Natural, glowing skin texture rendering with dynamic liquid foundation splashes and premium cosmetic packaging.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">AI Content Creation</span>
+              <span class="project-tag">Character Consistency</span>
+              <span class="project-tag">Meta Ads Creative</span>
+              <span class="project-tag">Social Media Reels</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://drive.google.com/file/d/1uTD_oTP-AwIM5Vr7zJDJtaTf43uo1laG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Watch in Drive</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </article>
+
+        <!-- Project 04: Gourmet Chocolate Commercial -->
+        <article class="project-card">
+          <div class="project-video-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1SINCH_XhxIehVEUql4YTxkQyYZIa7Ghz/preview" 
+              class="project-video-iframe" 
+              title="Artisan Melt — Gourmet Chocolate Ad"
+              allow="autoplay; fullscreen" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-category-row">
+              <span class="project-badge">FOOD &amp; BEVERAGE / SENSORY CAMPAIGN</span>
+              <span class="project-num">04</span>
+            </div>
+            <h3 class="project-title">Artisan Melt — Gourmet Chocolate Ad</h3>
+            <p class="project-desc">
+              Slow-motion liquid chocolate swirls, silky texture simulations, and appetizing cinematic lighting designed for digital engagement.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Cinematic Prompt Design</span>
+              <span class="project-tag">Omni Flash</span>
+              <span class="project-tag">Sensory Storytelling</span>
+              <span class="project-tag">Ad Creatives</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://drive.google.com/file/d/1SINCH_XhxIehVEUql4YTxkQyYZIa7Ghz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Watch in Drive</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </article>
+
+        <!-- Project 05: Carbonated Beverage Ad -->
+        <article class="project-card">
+          <div class="project-video-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/13YzpHyM8edUE1Jj8p0FvQO5Tp-mOOo9J/preview" 
+              class="project-video-iframe" 
+              title="Frost Rush — Carbonated Beverage Ad"
+              allow="autoplay; fullscreen" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-category-row">
+              <span class="project-badge">COMMERCIAL / HIGH-OCTANE MOTION</span>
+              <span class="project-num">05</span>
+            </div>
+            <h3 class="project-title">Frost Rush — Carbonated Beverage Ad</h3>
+            <p class="project-desc">
+              High-energy ice bursts, effervescent fizz splashes, and fast-paced commercial cuts optimized for broadcast and social advertising.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Ad Creative Development</span>
+              <span class="project-tag">Dynamic Motion</span>
+              <span class="project-tag">Sound Design Sync</span>
+              <span class="project-tag">Digital Marketing</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://drive.google.com/file/d/13YzpHyM8edUE1Jj8p0FvQO5Tp-mOOo9J/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Watch in Drive</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </article>
+
+        <!-- Project 06: 3D Character Animation -->
+        <article class="project-card">
+          <div class="project-video-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1XBB4FOhWN7xrTl7JuwlHMeIKs386X2sq/preview" 
+              class="project-video-iframe" 
+              title="Spirit Warrior — 3D Character Animation"
+              allow="autoplay; fullscreen" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-category-row">
+              <span class="project-badge">CHARACTER DESIGN / ANIMATED STORY</span>
+              <span class="project-num">06</span>
+            </div>
+            <h3 class="project-title">Spirit Warrior — 3D Character Animation</h3>
+            <p class="project-desc">
+              Stylized martial arts character animation with consistent keyframing, fluid combat choreography, and dynamic cinematic camera angles.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Character Consistency</span>
+              <span class="project-tag">Scene &amp; Storyboard</span>
+              <span class="project-tag">AI Storytelling</span>
+              <span class="project-tag">Creative Direction</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://drive.google.com/file/d/1XBB4FOhWN7xrTl7JuwlHMeIKs386X2sq/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Watch in Drive</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-hover-line"></div>
+        </article>
+
+      </div>
+
+      <!-- Bottom Drive Vault Banner -->
+      <div class="projects-vault-banner">
+        <div class="vault-inner-card">
+          <div class="vault-text-side">
+            <span class="vault-label">EXPANDED PRODUCTION VAULT</span>
+            <h3 class="vault-title">Explore The Full Production Archive</h3>
+            <p class="vault-desc">
+              Access the complete portfolio archive on Google Drive containing 12+ creative video renders, behind-the-scenes workflows, experimental motion studies, and commercial cut variations.
+            </p>
+          </div>
+          <div class="vault-btn-side">
+            <a href="https://drive.google.com/drive/folders/1JAyvymUaU0AaZIwj5x4__J-NJdLIRuDV?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-vault-explore">
+              <svg class="icon-folder-svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+              </svg>
+              <span>ACCESS COMPLETE DRIVE ARCHIVE (12+ VIDEOS)</span>
+              <span class="vault-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       5. RESULTS ACHIEVED SECTION (Proven Impact & Visual Excellence)
+       ====================================================================== -->
+  <section class="viewport-frame results-section-frame" id="results">
+    <div class="results-container">
+      
+      <!-- Section Header -->
+      <div class="results-header">
+        <div class="results-tag-row">
+          <span class="results-tag-line"></span>
+          <span class="results-tag-text">RESULTS ACHIEVED</span>
+        </div>
+
+        <h2 class="results-main-heading">
+          Results Achieved &amp;<br>
+          <span class="heading-serif-italic">Creative Impact.</span>
+        </h2>
+
+        <p class="results-statement">
+          Successfully created diverse AI-powered content including <span class="highlight-cyan">cinematic videos</span>, <span class="highlight-cyan">advertisements</span>, <span class="highlight-cyan">product visuals</span>, <span class="highlight-cyan">animated stories</span>, and <span class="highlight-cyan">social media content</span>. By combining creative ideas with advanced AI tools and effective workflows, I transform concepts into high-quality, engaging visual experiences efficiently.
+        </p>
+      </div>
+
+      <!-- KPI Metrics Row -->
+      <div class="results-metrics-grid">
+        <div class="metric-card">
+          <div class="metric-card-top">
+            <span class="metric-big-number">100+</span>
+            <span class="metric-emerald-dot"></span>
+          </div>
+          <span class="metric-title">AI Creatives Delivered</span>
+          <p class="metric-subtitle">Cinematic videos, high-resolution visual sets &amp; campaigns</p>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-card-top">
+            <span class="metric-big-number">10M+</span>
+            <span class="metric-emerald-dot"></span>
+          </div>
+          <span class="metric-title">Audience Impressions</span>
+          <p class="metric-subtitle">Collective reach across digital channels &amp; social platforms</p>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-card-top">
+            <span class="metric-big-number">100%</span>
+            <span class="metric-emerald-dot"></span>
+          </div>
+          <span class="metric-title">Workflow Acceleration</span>
+          <p class="metric-subtitle">Rapid concept-to-execution pipeline using AI toolchains</p>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-card-top">
+            <span class="metric-big-number">4x</span>
+            <span class="metric-emerald-dot"></span>
+          </div>
+          <span class="metric-title">Engagement Lift</span>
+          <p class="metric-subtitle">Higher retention and click-through vs. traditional stock media</p>
+          <div class="service-hover-line"></div>
+        </div>
+      </div>
+
+      <!-- Deliverables Showcase Grid -->
+      <div class="results-deliverables-grid">
+        
+        <!-- 01 Cinematic Videos -->
+        <div class="deliverable-card">
+          <div class="deliverable-top">
+            <span class="deliverable-num">01</span>
+            <span class="deliverable-badge">AI CINEMATOGRAPHY</span>
+          </div>
+          <h3 class="deliverable-title">Cinematic Videos</h3>
+          <p class="deliverable-desc">
+            Ultra-realistic motion, consistent lighting, and cinematic camera choreography tailored for narrative reels and commercial trailers.
+          </p>
+          <div class="deliverable-tags">
+            <span class="del-tag">Kling AI</span>
+            <span class="del-tag">Seedance</span>
+            <span class="del-tag">Storyboarding</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- 02 Advertisements -->
+        <div class="deliverable-card">
+          <div class="deliverable-top">
+            <span class="deliverable-num">02</span>
+            <span class="deliverable-badge">COMMERCIAL</span>
+          </div>
+          <h3 class="deliverable-title">Advertisements</h3>
+          <p class="deliverable-desc">
+            High-converting digital ad creatives and Meta campaigns engineered to capture attention in the first 3 seconds.
+          </p>
+          <div class="deliverable-tags">
+            <span class="del-tag">Meta Ads</span>
+            <span class="del-tag">Direct Response</span>
+            <span class="del-tag">Brand Creatives</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- 03 Product Visuals -->
+        <div class="deliverable-card">
+          <div class="deliverable-top">
+            <span class="deliverable-num">03</span>
+            <span class="deliverable-badge">3D &amp; RENDERING</span>
+          </div>
+          <h3 class="deliverable-title">Product Visuals</h3>
+          <p class="deliverable-desc">
+            Studio-quality product staging, hyper-realistic reflections, and luxury e-commerce visuals without expensive physical studio shoots.
+          </p>
+          <div class="deliverable-tags">
+            <span class="del-tag">Macro Staging</span>
+            <span class="del-tag">Omni Flash</span>
+            <span class="del-tag">Photorealism</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- 04 Animated Stories -->
+        <div class="deliverable-card">
+          <div class="deliverable-top">
+            <span class="deliverable-num">04</span>
+            <span class="deliverable-badge">NARRATIVE</span>
+          </div>
+          <h3 class="deliverable-title">Animated Stories</h3>
+          <p class="deliverable-desc">
+            Creative character designs with facial and attire consistency across diverse scenes, building engaging story-driven content.
+          </p>
+          <div class="deliverable-tags">
+            <span class="del-tag">Character Consistency</span>
+            <span class="del-tag">Script Writing</span>
+            <span class="del-tag">Multi-Scene</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- 05 Social Media Content -->
+        <div class="deliverable-card">
+          <div class="deliverable-top">
+            <span class="deliverable-num">05</span>
+            <span class="deliverable-badge">VIRAL GROWTH</span>
+          </div>
+          <h3 class="deliverable-title">Social Media Content</h3>
+          <p class="deliverable-desc">
+            High-retention short-form video reels, aesthetic carousel visual graphics, and promotional materials crafted for audience expansion.
+          </p>
+          <div class="deliverable-tags">
+            <span class="del-tag">Instagram Reels</span>
+            <span class="del-tag">YouTube Shorts</span>
+            <span class="del-tag">Trend Synthesis</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- 06 Effective AI Workflows Banner Card -->
+        <div class="deliverable-card card-workflow-banner">
+          <div class="deliverable-top">
+            <span class="deliverable-num">⚡</span>
+            <span class="deliverable-badge">WORKFLOW EFFICIENCY</span>
+          </div>
+          <h3 class="deliverable-title">Concept to Delivery</h3>
+          <p class="deliverable-desc">
+            Combining structured prompt engineering with multi-model AI workflows to transform raw ideas into production-ready visual experiences with unmatched turnaround speed.
+          </p>
+          <div class="workflow-steps-mini">
+            <span class="wf-step">Creative Concept</span>
+            <span class="wf-arrow">→</span>
+            <span class="wf-step">Prompt Architecture</span>
+            <span class="wf-arrow">→</span>
+            <span class="wf-step">Neural Synthesis</span>
+            <span class="wf-arrow">→</span>
+            <span class="wf-step">Final Production</span>
+          </div>
+          <div class="service-hover-line"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       6. TESTIMONIALS SECTION (Client Voices & Trusted Endorsements)
+       ====================================================================== -->
+  <section class="viewport-frame testimonials-section-frame" id="testimonials">
+    <div class="testimonials-container">
+      
+      <!-- Section Header -->
+      <div class="testimonials-header">
+        <div class="testimonials-tag-row">
+          <span class="testimonials-tag-line"></span>
+          <span class="testimonials-tag-text">TESTIMONIALS</span>
+        </div>
+
+        <h2 class="testimonials-main-heading">
+          Trusted Collaborations &amp;<br>
+          <span class="heading-serif-italic">Client Feedback.</span>
+        </h2>
+
+        <p class="testimonials-subheading">
+          Clients appreciate my creative approach and attention to detail. I turn ideas into powerful, engaging AI-powered visual experiences.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid">
+        
+        <!-- Card 01 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card-top">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="quote-mark">“</span>
+          </div>
+
+          <p class="testimonial-quote">
+            "Shuhaib's creative vision and attention to detail are on another level. He took our raw concepts and turned them into breathtaking cinematic AI videos that captivated our entire community and dramatically elevated our brand."
+          </p>
+
+          <div class="testimonial-author">
+            <div class="author-avatar-badge">
+              <span>AK</span>
+            </div>
+            <div class="author-details">
+              <span class="author-name">Arjun Kapoor</span>
+              <span class="author-role">Creative Director • Nexus Studios</span>
+            </div>
+            <div class="author-verified">
+              <span class="verified-dot"></span>
+              <span class="verified-text">Verified</span>
+            </div>
+          </div>
+
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card-top">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="quote-mark">“</span>
+          </div>
+
+          <p class="testimonial-quote">
+            "Finding a creator who understands both prompt engineering and photorealistic product staging is extremely rare. The product visuals and animated stories Shuhaib produced look like multi-million dollar studio productions."
+          </p>
+
+          <div class="testimonial-author">
+            <div class="author-avatar-badge">
+              <span>MR</span>
+            </div>
+            <div class="author-details">
+              <span class="author-name">Marcus Reynolds</span>
+              <span class="author-role">Founder • Apex Digital Labs</span>
+            </div>
+            <div class="author-verified">
+              <span class="verified-dot"></span>
+              <span class="verified-text">Verified</span>
+            </div>
+          </div>
+
+          <div class="service-hover-line"></div>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card-top">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="quote-mark">“</span>
+          </div>
+
+          <p class="testimonial-quote">
+            "The advertisement creatives and Meta reels Shuhaib developed generated our highest CTR to date. His turnaround time is remarkably fast, and his visual storytelling makes every campaign feel fresh, premium, and impactful."
+          </p>
+
+          <div class="testimonial-author">
+            <div class="author-avatar-badge">
+              <span>SL</span>
+            </div>
+            <div class="author-details">
+              <span class="author-name">Sarah Lin</span>
+              <span class="author-role">Marketing Lead • Veloce Media</span>
+            </div>
+            <div class="author-verified">
+              <span class="verified-dot"></span>
+              <span class="verified-text">Verified</span>
+            </div>
+          </div>
+
+          <div class="service-hover-line"></div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Trust / CTA Row -->
+      <div class="testimonials-bottom-cta">
+        <div class="trust-pill-row">
+          <div class="trust-item">
+            <span class="trust-icon">✦</span>
+            <span>100% Bespoke AI Production</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-icon">✦</span>
+            <span>Cinematic Quality Assurance</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-icon">✦</span>
+            <span>Rapid Concept-to-Delivery</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       7. CONTACT SECTION (Direct Channels & Inquiries)
+       ====================================================================== -->
+  <section class="viewport-frame contact-section-frame" id="contact">
+    <div class="contact-container">
+      
+      <!-- Section Header -->
+      <div class="contact-header">
+        <div class="contact-tag-row">
+          <span class="contact-tag-line"></span>
+          <span class="contact-tag-text">GET IN TOUCH</span>
+        </div>
+
+        <h2 class="contact-main-heading">
+          Let's Build Something<br>
+          <span class="heading-serif-italic">Extraordinary Together.</span>
+        </h2>
+
+        <p class="contact-subheading">
+          Have an idea, brand campaign, or visual project in mind? Reach out directly through your preferred channel for prompt communication and project scoping.
+        </p>
+      </div>
+
+      <!-- Contact Layout (Channels Grid + Direct Inquiry Box) -->
+      <div class="contact-main-layout">
+        
+        <!-- Left: Quick Direct Channels Grid -->
+        <div class="contact-channels-grid">
+          
+          <!-- Channel 1: Phone / Direct Call -->
+          <a href="tel:+918086648642" class="contact-channel-card">
+            <div class="channel-card-top">
+              <div class="channel-icon-wrap">
+                <svg class="channel-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <span class="channel-badge">CALL ME</span>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">Direct Phone</span>
+              <span class="channel-value">+91 80866 48642</span>
+              <p class="channel-desc">Available for voice consultations and immediate creative inquiries.</p>
+            </div>
+            <div class="channel-action-row">
+              <span class="channel-btn-text">Dial Directly</span>
+              <span class="channel-arrow">↗</span>
+            </div>
+            <div class="service-hover-line"></div>
+          </a>
+
+          <!-- Channel 2: WhatsApp Direct -->
+          <a href="https://wa.me/918086648642?text=Hi%20Mohammed%20Shuhaib%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="contact-channel-card card-whatsapp">
+            <div class="channel-card-top">
+              <div class="channel-icon-wrap icon-wa">
+                <svg class="channel-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
+              <span class="channel-badge badge-wa">WHATSAPP</span>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">Instant Chat</span>
+              <span class="channel-value">+91 80866 48642</span>
+              <p class="channel-desc">Direct line for fast responses, sharing project briefs, and swift coordination.</p>
+            </div>
+            <div class="channel-action-row">
+              <span class="channel-btn-text">Message on WhatsApp</span>
+              <span class="channel-arrow">↗</span>
+            </div>
+            <div class="service-hover-line"></div>
+          </a>
+
+          <!-- Channel 3: Instagram Profile -->
+          <a href="https://www.instagram.com/shu._.haib_?stkn=ZW03ZHFrZW16eDc3&utm_source=qr" target="_blank" rel="noopener noreferrer" class="contact-channel-card card-instagram">
+            <div class="channel-card-top">
+              <div class="channel-icon-wrap icon-ig">
+                <svg class="channel-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <span class="channel-badge badge-ig">INSTAGRAM</span>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">Visual Portfolio</span>
+              <span class="channel-value">@shu._.haib_</span>
+              <p class="channel-desc">Behind-the-scenes reels, new AI visual drops, and direct message inbox.</p>
+            </div>
+            <div class="channel-action-row">
+              <span class="channel-btn-text">Open Instagram</span>
+              <span class="channel-arrow">↗</span>
+            </div>
+            <div class="service-hover-line"></div>
+          </a>
+
+          <!-- Channel 4: Email Inquiries -->
+          <a href="mailto:mohamedshuhaib233@gmail.com" class="contact-channel-card">
+            <div class="channel-card-top">
+              <div class="channel-icon-wrap">
+                <svg class="channel-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span class="channel-badge">EMAIL</span>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">Official Inbox</span>
+              <span class="channel-value">mohamedshuhaib233@gmail.com</span>
+              <p class="channel-desc">Send detailed commercial briefs, contract inquiries, and formal proposals.</p>
+            </div>
+            <div class="channel-action-row">
+              <span class="channel-btn-text">Write Email</span>
+              <span class="channel-arrow">↗</span>
+            </div>
+            <div class="service-hover-line"></div>
+          </a>
+
+        </div>
+
+        <!-- Right: Interactive Quick Inquiry Card -->
+        <div class="contact-form-card">
+          <div class="form-card-header">
+            <span class="form-lead-tag">QUICK MESSAGE</span>
+            <h3 class="form-title">Send a Direct Project Brief</h3>
+            <p class="form-subtext">Fill in a few details and choose whether to send via WhatsApp or Email instantly.</p>
+          </div>
+
+          <form id="portfolioContactForm" class="contact-inquiry-form" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+            <div class="form-group">
+              <label for="contactName" class="form-label">YOUR NAME</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Rahul Sharma" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactService" class="form-label">SERVICE NEEDED</label>
+              <select id="contactService" class="form-input form-select">
+                <option value="AI Video Production">AI Video Production (Cinematic Videos &amp; Reels)</option>
+                <option value="AI Image Generation">AI Image Generation &amp; Product Visuals</option>
+                <option value="Prompt Engineering">Prompt Engineering &amp; AI Workflows</option>
+                <option value="Advertising Creatives">Advertising Creatives (Meta Ads)</option>
+                <option value="Social Media Content">Social Media Content Creation</option>
+                <option value="Brand & Product Visualization">Brand &amp; Product Visualization</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Complete Creative Campaign">Full End-to-End Creative Campaign</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">PROJECT DETAILS</label>
+              <textarea id="contactMessage" class="form-input form-textarea" rows="4" placeholder="Tell me about your project, timeline, and vision..." required></textarea>
+            </div>
+
+            <div class="form-actions-row">
+              <button type="button" class="btn-submit-wa" onclick="window.sendViaWhatsApp()">
+                <span>SEND VIA WHATSAPP</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <button type="submit" class="btn-submit-mail">
+                <span>SEND VIA EMAIL</span>
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+
+            <div id="formStatusNotice" class="form-status-notice" style="display: none;"></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       GLOBAL SITE FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-top-row">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-header">
+            <span class="footer-monogram">MS</span>
+            <span class="footer-brand-title">MOHAMMED SHUHAIB.K</span>
+          </div>
+          <p class="footer-brand-desc">
+            Prompt Engineer &amp; AI Content Creator specializing in cinematic visuals, hyper-realistic imagery, and high-impact digital experiences.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/shu._.haib_?stkn=ZW03ZHFrZW16eDc3&utm_source=qr" target="_blank" rel="noopener noreferrer" class="footer-soc-link" aria-label="Instagram">Instagram</a>
+            <span class="footer-dot">•</span>
+            <a href="https://wa.me/918086648642" target="_blank" rel="noopener noreferrer" class="footer-soc-link" aria-label="WhatsApp">WhatsApp</a>
+            <span class="footer-dot">•</span>
+            <a href="tel:+918086648642" class="footer-soc-link" aria-label="Phone">Phone</a>
+            <span class="footer-dot">•</span>
+            <a href="mailto:mohamedshuhaib233@gmail.com" class="footer-soc-link" aria-label="Email">Email</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-nav-col">
+          <span class="footer-col-title">NAVIGATION</span>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Col -->
+        <div class="footer-contact-col">
+          <span class="footer-col-title">DIRECT CONTACT</span>
+          <div class="footer-contact-items">
+            <div class="f-contact-line">
+              <span class="f-label">Phone:</span>
+              <a href="tel:+918086648642" class="f-value">+91 80866 48642</a>
+            </div>
+            <div class="f-contact-line">
+              <span class="f-label">WhatsApp:</span>
+              <a href="https://wa.me/918086648642" target="_blank" rel="noopener noreferrer" class="f-value">+91 80866 48642</a>
+            </div>
+            <div class="f-contact-line">
+              <span class="f-label">Instagram:</span>
+              <a href="https://www.instagram.com/shu._.haib_?stkn=ZW03ZHFrZW16eDc3&utm_source=qr" target="_blank" rel="noopener noreferrer" class="f-value">@shu._.haib_</a>
+            </div>
+            <div class="f-contact-line">
+              <span class="f-label">Email:</span>
+              <a href="mailto:mohamedshuhaib233@gmail.com" class="f-value">mohamedshuhaib233@gmail.com</a>
+            </div>
+          </div>
+          <a href="#home" class="footer-back-to-top">
+            <span>Back to top</span>
+            <span class="top-arrow">↑</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-divider"></div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; 2026 Mohammed Shuhaib.K. All rights reserved.
+        </p>
+        <p class="footer-credits">
+          Designed with dark luxury &amp; precision AI intelligence.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
