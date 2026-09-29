@@ -2974,19 +2974,18 @@ body {
   max-width: 760px;
 }
 
-/* Contact Main Layout: 2 Columns */
-.contact-main-layout {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 2.5rem;
-  align-items: stretch;
-}
-
-/* Channels Grid: 2x2 */
+/* Contact Channels Grid: 4 columns on desktop, 2 on tablet, 1 on mobile */
 .contact-channels-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .contact-channels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .contact-channel-card {
@@ -3335,7 +3334,7 @@ body {
   margin-top: 4rem;
   border-top: 1px solid var(--border-glass);
   background: #080A0A;
-  padding: 4.5rem 4vw 2.5rem 4vw;
+  padding: 2.25rem 4vw;
 }
 
 .footer-container {
@@ -3616,6 +3615,8 @@ body {
   align-items: center;
   font-size: 0.82rem;
   color: var(--text-subtle);
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* --------------------------------------------------------------------------
