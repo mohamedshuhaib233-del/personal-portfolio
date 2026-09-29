@@ -51,6 +51,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   background-color: var(--bg-dark);
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -61,6 +65,8 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -84,6 +90,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
   pointer-events: none;
   z-index: 1;
   opacity: 0.4;
@@ -1181,6 +1190,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  border-radius: 24px;
 }
 
 .about-halo-glow {
@@ -1188,8 +1199,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 125%;
-  height: 125%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, rgba(6, 78, 59, 0.08) 45%, transparent 70%);
   pointer-events: none;
   z-index: 1;
@@ -1913,6 +1926,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
@@ -3705,6 +3720,31 @@ body {
     justify-content: flex-start;
   }
 
+  .cta-inner-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2.25rem 1.75rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .cta-text-side {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cta-btn-side {
+    width: 100%;
+  }
+
+  .btn-services-contact {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: normal;
+  }
+
   /* Projects Section Responsive on Tablet */
   .projects-section-frame {
     padding: 3.5rem 1.5rem 3rem 1.5rem;
@@ -3789,6 +3829,76 @@ body {
   .viewport-frame {
     margin: 0.4rem;
     border-radius: 12px;
+    max-width: calc(100% - 0.8rem);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Global Sticky Navigation on Mobile */
+  .global-navbar {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand-group {
+    gap: 0.55rem;
+    min-width: 0;
+  }
+
+  .ms-brand-svg {
+    width: 32px;
+    height: 19px;
+    flex-shrink: 0;
+  }
+
+  .nav-brand-sep {
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .nav-brand-text {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-mobile-toggle {
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  /* Mobile Hero Optimization */
+  .mobile-hero-container {
+    padding: 1.5rem 1rem 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mobile-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .mobile-btn-work,
+  .mobile-btn-contact {
+    width: 100%;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
   }
 
   .about-section-frame,
@@ -3798,8 +3908,11 @@ body {
   .results-section-frame,
   .testimonials-section-frame,
   .contact-section-frame {
-    padding: 2.5rem 1.25rem 2.5rem 1.25rem;
-    margin-top: 1.5rem;
+    padding: 2.2rem 1rem 2.2rem 1rem;
+    margin-top: 1.25rem;
+    box-sizing: border-box;
+    width: auto !important;
+    max-width: calc(100% - 0.8rem);
   }
 
   .about-main-heading,
@@ -3810,16 +3923,27 @@ body {
   .testimonials-main-heading,
   .contact-main-heading {
     font-size: 2.2rem;
+    word-break: break-word;
   }
 
   .about-pillars-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .pillar-card {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .tools-bento-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0.75rem;
+    width: 100%;
+    min-width: 0;
   }
 
   .hud-float-pill {
@@ -3840,6 +3964,9 @@ body {
 
   .about-quote-box {
     padding: 1.15rem 1.25rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
   }
 
   .about-quote-text {
@@ -3847,16 +3974,29 @@ body {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.5rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .project-card {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .project-info {
     padding: 1.5rem 1.25rem;
+    box-sizing: border-box;
   }
 
   .vault-inner-card {
     padding: 1.75rem 1.25rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
   }
 
   .btn-vault-explore {
@@ -3868,26 +4008,34 @@ body {
 
   /* Contact Section Full Mobile Screen Optimization */
   .viewport-frame.contact-section-frame {
-    margin: 0.6rem 0.3rem;
-    padding: 2.2rem 1rem 2rem 1rem;
-    border-radius: 16px;
-    width: auto;
+    margin: 0.4rem;
+    padding: 2rem 1rem 1.85rem 1rem;
+    border-radius: 12px;
+    width: auto !important;
+    max-width: calc(100% - 0.8rem);
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .contact-container {
     width: 100%;
     max-width: 100%;
     padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
   }
 
   .contact-header {
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .contact-main-heading {
     font-size: clamp(2rem, 7.8vw, 2.5rem);
     line-height: 1.15;
     margin-bottom: 0.85rem;
+    word-break: break-word;
   }
 
   .contact-subheading {
@@ -3897,26 +4045,48 @@ body {
   }
 
   .contact-main-layout {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
     width: 100%;
-  }
-
-  .contact-channels-grid {
-    grid-template-columns: 1fr;
-    gap: 0.85rem;
-    width: 100%;
-  }
-
-  .contact-channel-card {
-    padding: 1.35rem 1.15rem;
-    border-radius: 14px;
-    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     box-sizing: border-box;
   }
 
+  .contact-channels-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .contact-channel-card {
+    padding: 1.25rem 1rem;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
   .channel-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
     margin-bottom: 0.85rem;
+  }
+
+  .channel-badge {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.62rem;
+    padding: 0.2rem 0.55rem;
+    letter-spacing: 0.1em;
   }
 
   .channel-icon-wrap {
@@ -4094,17 +4264,24 @@ body {
   }
 
   .results-metrics-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
   }
 
   .deliverable-card {
     padding: 1.75rem 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
   }
 
   .workflow-steps-mini {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    width: 100%;
+    min-width: 0;
   }
 
   .wf-arrow {
@@ -4113,18 +4290,27 @@ body {
 
   .skills-category-card {
     padding: 1.75rem 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
   }
 
   .skills-tools-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
   }
 
   .metric-item {
     flex: 1 1 100%;
+    min-width: 0;
   }
 
   .tools-tags-list {
     gap: 1.1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 0;
   }
 
   .tool-chip {
@@ -4135,11 +4321,20 @@ body {
     margin-top: 2rem;
     margin-bottom: 2.5rem;
     border-radius: 16px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .service-roster-row {
+    grid-template-columns: minmax(0, 1fr);
     padding: 1.6rem 1.25rem;
     gap: 1.25rem;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .service-row-left {
