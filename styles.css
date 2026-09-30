@@ -2421,11 +2421,17 @@ body {
 }
 
 /* KPI Metrics Grid */
+.about-metrics-grid {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+}
+
 .results-metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  margin-bottom: 3.5rem;
 }
 
 .metric-card {
@@ -4266,8 +4272,19 @@ body {
     display: none;
   }
 
+  .about-metrics-grid {
+    margin-top: 2rem;
+  }
+
   .results-metrics-grid {
     grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
+  }
+
+  .metric-card {
+    padding: 1.5rem 1.25rem;
+    box-sizing: border-box;
     width: 100%;
     min-width: 0;
   }
