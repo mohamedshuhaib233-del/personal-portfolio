@@ -631,10 +631,11 @@ body {
 
 .mobile-eyebrow {
   font-family: var(--font-heading);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  color: var(--accent-warm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--text-subtle);
+  text-transform: uppercase;
   margin-bottom: 0.85rem;
 }
 
@@ -1414,29 +1415,7 @@ body {
 }
 
 .skills-tag-line {
-  width: 32px;
-  height: 2px;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 8px var(--accent-emerald);
-  border-radius: 2px;
-}
-
-.skills-tag-text {
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--accent-emerald);
-  text-transform: uppercase;
-}
-
-.skills-main-heading {
-  font-family: var(--font-sans);
-  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-  margin-bottom: 1.2rem;
+  display: none;
 }
 
 .skills-subheading {
@@ -1682,29 +1661,7 @@ body {
 }
 
 .services-tag-line {
-  width: 32px;
-  height: 2px;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 8px var(--accent-emerald);
-  border-radius: 2px;
-}
-
-.services-tag-text {
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--accent-emerald);
-  text-transform: uppercase;
-}
-
-.services-main-heading {
-  font-family: var(--font-sans);
-  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-  margin-bottom: 1.2rem;
+  display: none;
 }
 
 .services-subheading {
@@ -2029,19 +1986,7 @@ body {
 }
 
 .projects-tag-line {
-  width: 32px;
-  height: 2px;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 8px var(--accent-emerald);
-  border-radius: 2px;
-}
-
-.projects-tag-text {
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--accent-emerald);
-  text-transform: uppercase;
+  display: none;
 }
 
 .projects-header-flex {
@@ -2054,16 +1999,6 @@ body {
 
 .projects-header-text {
   max-width: 820px;
-}
-
-.projects-main-heading {
-  font-family: var(--font-sans);
-  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-  margin-bottom: 1.35rem;
 }
 
 .projects-subheading {
@@ -2663,29 +2598,7 @@ body {
 }
 
 .testimonials-tag-line {
-  width: 32px;
-  height: 2px;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 8px var(--accent-emerald);
-  border-radius: 2px;
-}
-
-.testimonials-tag-text {
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--accent-emerald);
-  text-transform: uppercase;
-}
-
-.testimonials-main-heading {
-  font-family: var(--font-sans);
-  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-  margin-bottom: 1.35rem;
+  display: none;
 }
 
 .testimonials-subheading {
@@ -2951,29 +2864,7 @@ body {
 }
 
 .contact-tag-line {
-  width: 32px;
-  height: 2px;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 8px var(--accent-emerald);
-  border-radius: 2px;
-}
-
-.contact-tag-text {
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--accent-emerald);
-  text-transform: uppercase;
-}
-
-.contact-main-heading {
-  font-family: var(--font-sans);
-  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-  margin-bottom: 1.35rem;
+  display: none;
 }
 
 .contact-subheading {
@@ -3684,7 +3575,7 @@ body {
   }
 
   .about-visual-column {
-    order: -1; /* Display visual right after heading or top */
+    order: 2; /* Content, story and metrics first, then visual showcase */
   }
 
   .about-visual-stage {
@@ -3934,8 +3825,24 @@ body {
   .results-main-heading,
   .testimonials-main-heading,
   .contact-main-heading {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 6.5vw, 2.2rem);
+    line-height: 1.2;
     word-break: break-word;
+  }
+
+  .about-main-heading br,
+  .skills-main-heading br,
+  .services-main-heading br,
+  .projects-main-heading br,
+  .testimonials-main-heading br,
+  .contact-main-heading br {
+    display: none;
+  }
+
+  .about-main-heading.about-lead-statement {
+    font-size: clamp(1.35rem, 4.6vw, 1.75rem);
+    line-height: 1.35;
+    font-weight: 700;
   }
 
   .about-pillars-grid {
